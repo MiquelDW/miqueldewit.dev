@@ -13,7 +13,7 @@ export function cn(...inputs: ClassValue[]) {
 // function that returns Metadata for your application
 // set a default value of an empty object for the destructured parameter (= {})
 export function constructMetadata({
-  title = "Portfolio - Miquel de Wit",
+  title = "Miquel de Wit - Portfolio",
   description = "This is my portfolio project for future colleages!",
   icons = "/favicon.ico",
   noIndex = false,

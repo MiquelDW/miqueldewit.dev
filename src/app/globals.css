@@ -103,9 +103,9 @@ body {
 .fade-out {
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.4) 30%,
+    rgba(241, 245, 249, 0.4) 30%,
     rgba(255, 255, 255, 0.3) 60%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.1) 100%
   );
 }
 
@@ -140,8 +140,8 @@ body {
 .dark .fade-out {
   background: radial-gradient(
     circle,
-    rgba(0, 0, 0, 0.3) 30%,
-    rgba(0, 0, 0, 0.2) 60%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(24, 24, 27, 0.4) 30%,
+    rgba(24, 24, 27, 0.3) 60%,
+    rgba(24, 24, 27, 0.1) 100%
   );
 }

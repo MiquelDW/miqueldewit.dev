@@ -1,15 +1,9 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const rotatingTexts = [
-  "Software Development",
-  "Front-end Development",
-  "Back-end Development",
-  "Full-stack Development",
-];
-
-const RotatingText = () => {
+const RotatingText = ({ rotatingTexts }: { rotatingTexts: string[] }) => {
   // state that keeps track which word from the array is currently being displayed
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   // state that holds the portion of a word that's currently visible
@@ -30,7 +24,7 @@ const RotatingText = () => {
     let letterIndex = isDeleting ? currentWord.length : 0;
 
     // function handles typing and deleting the text step by step
-    // this function is constantly being executud
+    // the function 'type' is constantly being scheduled to be run again by the setTimeout function 'timeout' after a short delay
     const type = () => {
       if (isPaused) {
         // pause after typing is complete (0.5 seconds delay)
@@ -42,12 +36,14 @@ const RotatingText = () => {
         // typing the text
         setDisplayedText(currentWord.slice(0, letterIndex + 1));
         letterIndex++;
-        timeout = setTimeout(type, 100); // typing speed (slower)
+        // schedule next call
+        timeout = setTimeout(type, 100); // typing speed slower
       } else if (isDeleting && letterIndex > 0) {
         // deleting the text after the pause
         setDisplayedText(currentWord.slice(0, letterIndex - 1));
         letterIndex--;
-        timeout = setTimeout(type, 50); // deleting speed (faster)
+        // schedule next call
+        timeout = setTimeout(type, 50); // deleting speed faster
       } else {
         // switch between typing and deleting mode
         if (isDeleting) {
@@ -57,31 +53,39 @@ const RotatingText = () => {
         } else {
           setIsPaused(true); // pause after fully typing the word
         }
-        timeout = setTimeout(type, 1000); // delay between switching
+        // delay between switching from typing mode to deleting mode (or vice versa)
+        timeout = setTimeout(type, 1000);
       }
     };
 
+    // initial call
+    // wait 1 second before first execution of function 'type'
     timeout = setTimeout(type, 1000);
 
+    // cleanup setTimeout function on unmount
     return () => clearTimeout(timeout);
   }, [currentTextIndex, isDeleting, isPaused]);
 
   useEffect(() => {
-    // blink underscore every 500ms
+    // blink underscore every 450ms
     const underscoreInterval = setInterval(() => {
       setIsUnderscoreVisible((prev) => !prev);
-    }, 500);
+    }, 450);
 
     return () => clearInterval(underscoreInterval);
   }, []);
 
   return (
-    <div className="flex gap-x-0.5 text-xl">
+    <div className="text-xl text-center lg:text-start lg:justify-start w-full sm:text-2xl">
       <span>{displayedText}</span>
       <span
-        className={`${
-          isUnderscoreVisible ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-300`}
+        className={cn(
+          "duration-0 text-3xl dark:text-purple-300 text-blue-400 ml-0.5",
+          {
+            "opacity-100": isUnderscoreVisible,
+            "opacity-0": !isUnderscoreVisible,
+          }
+        )}
       >
         _
       </span>
