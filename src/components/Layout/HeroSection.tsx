@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { Mail } from "lucide-react";
 import ThemeToggler from "../Theming/theme-toggler";
-import RotatingTexts from "../Animations/RotatingText";
+import RotatingText from "../Animations/RotatingText";
 
 const ROTATINGTEXTS = [
   "Software Development",
@@ -24,7 +24,7 @@ const HeroSection = () => {
           <ThemeToggler />
         </div>
 
-        <div className="flex flex-col space-y-10 lg:grid lg:grid-cols-10 lg:space-x-10 px-5 pt-8 pb-14 lg:pt-32 lg:pb-[300px]">
+        <div className="flex flex-col space-y-10 lg:grid lg:grid-cols-10 lg:space-x-10 px-5 pt-8 pb-14 lg:pt-32 lg:pb-[200px]">
           {/* Image */}
           <div className="w-full h-full col-span-4 flex justify-center items-center">
             <Image
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col text-center lg:text-start space-y-2.5">
               <p className="text-md lg:text-xl -mb-2">I'm passionate about,</p>
-              <RotatingTexts rotatingTexts={ROTATINGTEXTS} />
+              <RotatingText rotatingTexts={ROTATINGTEXTS} />
             </div>
 
             <div className="flex justify-center items-end space-x-4 lg:justify-start h-10">

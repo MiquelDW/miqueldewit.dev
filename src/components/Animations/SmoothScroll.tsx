@@ -1,10 +1,5 @@
-"use client";
-
-import { useTheme } from "next-themes";
-
 interface IconType {
-  iconDark: JSX.Element;
-  iconLight: JSX.Element;
+  icon: JSX.Element;
   name: string;
 }
 interface SmoothScrollProps {
@@ -13,8 +8,6 @@ interface SmoothScrollProps {
 }
 
 const SmoothScroll = ({ icons, direction }: SmoothScrollProps) => {
-  const { theme } = useTheme();
-
   return (
     <div className="overflow-hidden relative">
       <div
@@ -31,7 +24,7 @@ const SmoothScroll = ({ icons, direction }: SmoothScrollProps) => {
             className="py-2 border dark:border-white/50 border-black/50 rounded-lg min-w-[75px]"
           >
             <div className="flex flex-col items-center justify-center space-y-1 flex-shrink-0">
-              {theme === "light" ? iconObj.iconLight : iconObj.iconDark}
+              {iconObj.icon}
               <span className="text-muted-foreground">{iconObj.name}</span>
             </div>
           </div>

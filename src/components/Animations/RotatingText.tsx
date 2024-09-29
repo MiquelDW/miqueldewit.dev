@@ -3,7 +3,13 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const RotatingText = ({ rotatingTexts }: { rotatingTexts: string[] }) => {
+const RotatingText = ({
+  rotatingTexts,
+  largeTxt = false,
+}: {
+  rotatingTexts: string[];
+  largeTxt?: boolean;
+}) => {
   // state that keeps track which word from the array is currently being displayed
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   // state that holds the portion of a word that's currently visible
@@ -77,7 +83,7 @@ const RotatingText = ({ rotatingTexts }: { rotatingTexts: string[] }) => {
 
   return (
     <div className="text-xl text-center lg:text-start lg:justify-start w-full sm:text-2xl">
-      <span>{displayedText}</span>
+      <span className={cn({ "text-4xl": largeTxt })}>{displayedText}</span>
       <span
         className={cn(
           "duration-0 text-3xl dark:text-purple-300 text-blue-400 ml-0.5",

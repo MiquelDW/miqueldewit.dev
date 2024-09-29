@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* svg: black for light mode */
+  --svg-fill: #000;
+}
+.dark {
+  /* svg: light for dark mode */
+  --svg-fill: #fff;
+}
+
 html,
 body {
   height: 100%;
