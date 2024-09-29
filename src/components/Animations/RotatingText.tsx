@@ -19,7 +19,7 @@ const RotatingText = ({ rotatingTexts }: { rotatingTexts: string[] }) => {
     // stores delay between each step of the animation
     let timeout: NodeJS.Timeout;
     // stores the word that is currently being tyoed or deleted
-    let currentWord = rotatingTexts[currentTextIndex];
+    const currentWord = rotatingTexts[currentTextIndex];
     // store the position of the next letter to type or delete (starts at 0 when typing, and starts at the word's length when deleting)
     let letterIndex = isDeleting ? currentWord.length : 0;
 

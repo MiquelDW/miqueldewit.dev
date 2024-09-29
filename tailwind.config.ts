@@ -56,6 +56,20 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        leftToRight: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" }, // move entire container width
+        },
+        rightToLeft: {
+          "0%": { transform: "translateX(-100%)" }, // start from the end
+          "100%": { transform: "translateX(0)" }, // move to the start
+        },
+      },
+      animation: {
+        leftToRight: "leftToRight 40s linear infinite",
+        rightToLeft: "rightToLeft 40s linear infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
