@@ -78,9 +78,12 @@ const LatestWork = () => {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-center space-y-3 lg:grid lg:grid-cols-2 lg:space-x-3">
-          {LATEST_WORKS.map((latest) => {
+          {LATEST_WORKS.map((latest, i) => {
             return (
-              <div className="h-full w-full rounded-lg border-black/50 bg-white px-5 py-3 shadow-lg dark:border-white/50 dark:bg-[#18181b] dark:shadow-[#18181b]">
+              <div
+                key={i}
+                className="h-full w-full rounded-lg border-black/50 bg-white px-5 py-3 shadow-lg dark:border-white/50 dark:bg-[#18181b] dark:shadow-[#18181b]"
+              >
                 <div className="flex w-full flex-col space-y-2">
                   {/* Image */}
                   <div className="h-[200px] w-[90%]">
