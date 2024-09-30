@@ -19,7 +19,7 @@ const HeroSection = () => {
   return (
     <section>
       <MaxWidthWrapper>
-        <div className="flex items-center justify-between px-5 pt-5">
+        <div className="flex items-center justify-between px-5 pt-5 lg:pt-32">
           <p className="font-bold sm:text-lg lg:text-xl">Miquel de Wit.</p>
           <ThemeToggler />
         </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 I'm Miquel de Wit, and I enjoy
               </p>
 
-              <h1 className="text-balance text-3xl !leading-tight tracking-tight md:text-4xl lg:text-5xl xl:text-6xl">
+              <h1 className="text-balance text-3xl !leading-tight tracking-tight md:text-4xl lg:text-5xl">
                 Building great looking,{" "}
                 <span className="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-gray-300">
                   functional

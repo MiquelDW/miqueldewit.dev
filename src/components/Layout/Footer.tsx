@@ -6,11 +6,11 @@ import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="mt-44">
+    <footer className="mt-44 bg-white dark:bg-[#18181b]">
       {/* visual seperator between footer and main content */}
       <div className="w-full border-2 border-t border-zinc-700 dark:border-gray-200" />
 
-      <MaxWidthWrapper className="bg-white dark:bg-[#18181b]">
+      <MaxWidthWrapper>
         <div className="flex h-[150px] w-full flex-col items-center justify-center space-y-2">
           {/* links */}
           <div className="flex items-center justify-center space-x-4">
