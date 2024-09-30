@@ -162,6 +162,22 @@ const ICONS_BOTTOM = [
         height="22px"
         style={{ fill: "var(--svg-fill)", stroke: "var(--svg-stroke)" }}
       >
+        <title>Supabase</title>
+        <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" />
+      </svg>
+    ),
+    name: "Supabase",
+  },
+  {
+    icon: (
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="22px"
+        height="22px"
+        style={{ fill: "var(--svg-fill)", stroke: "var(--svg-stroke)" }}
+      >
         <title>Tailwind CSS</title>
         <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
       </svg>
@@ -221,36 +237,36 @@ const ICONS_BOTTOM = [
 const AboutSection = () => {
   return (
     <section>
-      <div className="bg-white dark:bg-[#18181b] h-full w-full">
+      <div id="about" className="h-full w-full bg-white dark:bg-[#18181b]">
         {/* visual seperator */}
-        <div className="border-t dark:border-gray-200 border-zinc-700 w-full border-2" />
+        <div className="w-full border-2 border-t border-zinc-700 dark:border-gray-200" />
 
-        <MaxWidthWrapper className="pt-36 pb-20">
-          <div className="w-full flex justify-center items-center">
-            <div className="my-10 font-bold">
+        <MaxWidthWrapper className="pb-48 pt-36">
+          <div className="flex w-full items-center justify-center">
+            <div className="mb-10 font-bold">
               <RotatingText rotatingTexts={ROTATINGTEXTS} largeTxt />
             </div>
           </div>
 
-          <div className="space-y-10 lg:grid lg:grid-cols-2 lg:space-x-10 w-full lg:space-y-0 lg:items-center">
+          <div className="w-full space-y-10 lg:grid lg:grid-cols-2 lg:items-center lg:space-x-10 lg:space-y-0">
             {/* slide animation */}
-            <div className="flex flex-col space-y-3 w-full relative">
+            <div className="relative flex w-full flex-col space-y-3">
               {/* fade effects to make scroll animation look better */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute left-0 z-10 w-12 h-full bg-gradient-to-r dark:from-[#18181b] from-[#fff] to-transparent"
+                className="pointer-events-none absolute left-0 z-10 h-full w-12 bg-gradient-to-r from-[#fff] to-transparent dark:from-[#18181b]"
               />
 
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute right-0 z-10 w-12 h-full bg-gradient-to-l dark:from-[#18181b] from-[#fff] to-transparent"
+                className="pointer-events-none absolute right-0 z-10 h-full w-12 bg-gradient-to-l from-[#fff] to-transparent dark:from-[#18181b]"
               />
 
               <SmoothScroll icons={ICONS_TOP} direction="leftToRight" />
               <SmoothScroll icons={ICONS_BOTTOM} direction="rightToLeft" />
             </div>
 
-            <p className="text-[20px] text-wrap lg:text-left max-w-prose">
+            <p className="max-w-prose text-balance text-center text-[19px] lg:text-wrap lg:text-left lg:text-[20px]">
               I'm adaptable and enjoy learning new technologies to meet project
               needs. I'm confident in my ability to quickly adapt to new tools
               and frameworks to build great apps. I'm always eager to learn and
@@ -260,7 +276,7 @@ const AboutSection = () => {
         </MaxWidthWrapper>
 
         {/* visual seperator */}
-        <div className="border-b dark:border-gray-200 border-zinc-700 w-full border-2" />
+        <div className="w-full border-2 border-b border-zinc-700 dark:border-gray-200" />
       </div>
     </section>
   );

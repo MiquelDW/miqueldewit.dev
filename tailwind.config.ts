@@ -57,10 +57,12 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        // move entire container
         leftToRight: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" }, // move entire container width
+          "0%": { transform: "translateX(0)" }, // start from the start
+          "100%": { transform: "translateX(-100%)" }, // move to the end
         },
+        // move entire container
         rightToLeft: {
           "0%": { transform: "translateX(-100%)" }, // start from the end
           "100%": { transform: "translateX(0)" }, // move to the start

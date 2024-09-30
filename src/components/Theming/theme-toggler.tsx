@@ -10,17 +10,21 @@ const ThemeToggler = () => {
     <>
       {theme === "light" ? (
         <button
-          className="transition-all hover:scale-[1.2]"
+          className="transition-all hover:scale-[1.1]"
           onClick={() => setTheme("dark")}
         >
-          <Moon className="h-7 w-7" />
+          <div className="h-7 w-7 lg:h-8 lg:w-8">
+            <Moon className="h-full w-full" />
+          </div>
         </button>
       ) : (
         <button
-          className="transition-all hover:scale-[1.2]"
+          className="transition-all hover:scale-[1.1]"
           onClick={() => setTheme("light")}
         >
-          <Sun className="h-7 w-7" />
+          <div className="h-7 w-7 lg:h-8 lg:w-8">
+            <Sun className="h-full w-full" />
+          </div>
         </button>
       )}
     </>

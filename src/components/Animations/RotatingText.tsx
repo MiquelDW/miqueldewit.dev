@@ -82,15 +82,17 @@ const RotatingText = ({
   }, []);
 
   return (
-    <div className="text-xl text-center lg:text-start lg:justify-start w-full sm:text-2xl">
-      <span className={cn({ "text-4xl": largeTxt })}>{displayedText}</span>
+    <div className="w-full text-center text-xl sm:text-2xl lg:justify-start lg:text-start">
+      <span className={cn({ "text-3xl": largeTxt, "sm:text-4xl": largeTxt })}>
+        {displayedText}
+      </span>
       <span
         className={cn(
-          "duration-0 text-3xl dark:text-purple-300 text-blue-400 ml-0.5",
+          "ml-0.5 text-3xl text-blue-400 duration-0 dark:text-purple-300",
           {
             "opacity-100": isUnderscoreVisible,
             "opacity-0": !isUnderscoreVisible,
-          }
+          },
         )}
       >
         _
