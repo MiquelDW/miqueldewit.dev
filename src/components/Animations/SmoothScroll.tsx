@@ -9,7 +9,7 @@ interface SmoothScrollProps {
 
 const SmoothScroll = ({ icons, direction }: SmoothScrollProps) => {
   return (
-    <div className="overflow-hidden relative">
+    <div className="relative overflow-hidden">
       <div
         className={`flex w-full space-x-4 ${
           direction === "leftToRight"
@@ -21,9 +21,9 @@ const SmoothScroll = ({ icons, direction }: SmoothScrollProps) => {
         {[...icons, ...icons, ...icons].map((iconObj, i) => (
           <div
             key={i}
-            className="py-2 border dark:border-white/50 border-black/50 rounded-lg min-w-[75px]"
+            className="min-w-[75px] rounded-lg border border-black/50 px-10 py-2 dark:border-white/50"
           >
-            <div className="flex flex-col items-center justify-center space-y-1 flex-shrink-0">
+            <div className="flex flex-shrink-0 flex-col items-center justify-center space-y-1">
               {iconObj.icon}
               <span className="text-muted-foreground">{iconObj.name}</span>
             </div>

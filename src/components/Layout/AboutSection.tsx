@@ -237,7 +237,10 @@ const ICONS_BOTTOM = [
 const AboutSection = () => {
   return (
     <section>
-      <div id="about" className="h-full w-full bg-white dark:bg-[#18181b]">
+      <div
+        id="about"
+        className="h-full w-full scroll-mt-[323px] bg-white dark:bg-[#18181b]"
+      >
         {/* visual seperator */}
         <div className="w-full border-2 border-t border-zinc-700 dark:border-gray-200" />
 
@@ -267,7 +270,7 @@ const AboutSection = () => {
             </div>
 
             <p className="max-w-prose text-balance text-center text-[19px] lg:text-wrap lg:text-left lg:text-[20px]">
-              I'm adaptable and enjoy learning new technologies to meet project
+              I'm flexible and enjoy learning new technologies to meet project
               needs. I'm confident in my ability to quickly adapt to new tools
               and frameworks to build great apps. I'm always eager to learn and
               improve! 😊
