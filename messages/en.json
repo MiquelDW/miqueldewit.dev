@@ -1,0 +1,31 @@
+{
+  "HomePage": {
+    "introduce": "I'm Miquel de Wit, and I enjoy",
+    "landingTextStart": "Building great looking,",
+    "landingTextFunc": "functional",
+    "landingTextConj": "and",
+    "landingTextInt": "interactive",
+    "passionateText": "I'm passionate about,"
+  },
+  "AboutPage": {
+    "AboutText": "I'm flexible and enjoy learning new technologies to meet project needs. I'm confident in my ability to quickly adapt to new tools and frameworks to build great apps. I'm always eager to learn and improve! 😊"
+  },
+  "LatestWorkPage": {
+    "title": "Check out my latest work",
+    "description": "Ik heb aan verschillende projecten gewerkt, van simpele websites tot complexe webapplicaties. Hier zijn een paar van mijn favorieten.",
+    "readMe": "Read me",
+    "readMeTitle": "Personal Commenting Practice",
+    "readMeDescription": "My code contains detailed comments to help me remember its functionality during project work. In a professional setting, I will follow the workplace's coding and commenting guidelines.",
+    "importantInfo": "Important info",
+    "importantTitle": "Server Location and Performance Impact",
+    "importantDescription": "The project's custom server is hosted on Railway, with its current location in the USA. This may lead to occasional delays or inconsistencies due to geographic distance. I was unfortunately unable to host it closer to my location, as that would require a paid subscription on their platform.",
+    "NeonCloud": "NeonCloud is a digital marketplace where users can buy and sell high-quality UI kits and icons. It offers a platform for creators to showcase their work, making it easy to find unique design assets for projects.",
+    "GuardGear": "This e-commerce platform features a sleek, modern UI where users can design and customize phone cases with personalized images, creating unique, high-quality products tailored to their style.",
+    "Google": "This Google Clone project is a simple web-based search engine imitation, replicating Google's layout and core features. It displays mock search results and served as a valuable frontend development learning tool!",
+    "ChatWebapp": "This chat app lets users send and receive messages with real-time updates across devices. Users can engage in one-on-one or group conversations and also receive notifications to keep users informed of new messages and friend requests."
+  },
+  "Footer": {
+    "title": "Crafted with ❤️‍🔥 by Miquel de Wit",
+    "contactMe": "Contact me via email or LinkedIn"
+  }
+}

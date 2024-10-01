@@ -3,8 +3,11 @@ import MaxWidthWrapper from "../MaxWidthWrapper";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="mt-44 bg-white dark:bg-[#18181b]">
       {/* visual seperator between footer and main content */}
@@ -29,11 +32,9 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-1">
-            <p className="text-base font-bold md:text-lg">
-              Crafted with ❤️‍🔥 by Miquel de Wit
-            </p>
+            <p className="text-base font-bold md:text-lg">{t("title")}</p>
             <p className="text-base text-muted-foreground dark:text-gray-300">
-              Contact me via e-mail or LinkedIn
+              {t("contactMe")}
             </p>
           </div>
         </div>

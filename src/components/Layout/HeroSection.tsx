@@ -6,6 +6,7 @@ import { BsFillFileEarmarkPersonFill } from "react-icons/bs";
 import { ChevronDown, Mail } from "lucide-react";
 import ThemeToggler from "../Theming/theme-toggler";
 import RotatingText from "../Animations/RotatingText";
+import { useTranslations } from "next-intl";
 
 const ROTATINGTEXTS = [
   "Software Development",
@@ -16,6 +17,8 @@ const ROTATINGTEXTS = [
 ];
 
 const HeroSection = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <section>
       <MaxWidthWrapper>
@@ -40,25 +43,23 @@ const HeroSection = () => {
           {/* Landing text  */}
           <div className="col-span-full col-start-5 flex flex-col space-y-8 font-bold lg:space-y-10">
             <div className="flex flex-col space-y-3 text-center lg:text-start">
-              <p className="text-md lg:text-xl">
-                I'm Miquel de Wit, and I enjoy
-              </p>
+              <p className="text-md lg:text-xl">{t("introduce")}</p>
 
               <h1 className="text-balance text-3xl !leading-tight tracking-tight md:text-4xl lg:text-5xl">
-                Building great looking,{" "}
+                {t("landingTextStart")}{" "}
                 <span className="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-gray-300">
-                  functional
+                  {t("landingTextFunc")}
                 </span>{" "}
-                and{" "}
+                {t("landingTextConj")}{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-300 bg-clip-text text-transparent dark:from-purple-500 dark:via-purple-400 dark:to-gray-300">
-                  interactive
+                  {t("landingTextInt")}
                 </span>{" "}
                 apps ❤️‍🔥
               </h1>
             </div>
 
             <div className="flex flex-col space-y-2.5 text-center lg:text-start">
-              <p className="text-md -mb-2 lg:text-xl">I'm passionate about,</p>
+              <p className="text-md -mb-2 lg:text-xl">{t("passionateText")}</p>
               <RotatingText rotatingTexts={ROTATINGTEXTS} />
             </div>
 

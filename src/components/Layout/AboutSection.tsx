@@ -1,8 +1,9 @@
+import { useTranslations } from "next-intl";
 import RotatingText from "../Animations/RotatingText";
 import SmoothScroll from "../Animations/SmoothScroll";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 
-const ROTATINGTEXTS = ["Stack", "Technologies", "Skills"];
+const ROTATINGTEXTS = ["Technologies", "Stack", "Skills"];
 
 const ICONS_TOP = [
   {
@@ -235,6 +236,8 @@ const ICONS_BOTTOM = [
 ];
 
 const AboutSection = () => {
+  const t = useTranslations("AboutPage");
+
   return (
     <section>
       <div
@@ -270,10 +273,7 @@ const AboutSection = () => {
             </div>
 
             <p className="max-w-prose text-balance text-center text-[19px] lg:text-wrap lg:text-left lg:text-[20px]">
-              I'm flexible and enjoy learning new technologies to meet project
-              needs. I'm confident in my ability to quickly adapt to new tools
-              and frameworks to build great apps. I'm always eager to learn and
-              improve! 😊
+              {t("AboutText")}
             </p>
           </div>
         </MaxWidthWrapper>

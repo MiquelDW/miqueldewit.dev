@@ -16,6 +16,7 @@ import { Button } from "../ui/button";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 type LatestWork = {
   img: string;
@@ -36,6 +37,7 @@ interface FadeInUpProps {
 }
 
 const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
+  const t = useTranslations("LatestWorkPage");
   // state var keeps track of the current visible items
   const [visibleItems, setVisibleItems] = useState<LatestWork[]>([]);
   // state var keeps determines when animation should begin
@@ -156,7 +158,7 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button className="flex p-2 text-base" variant="link">
-                          Important info &rarr;
+                          {t("importantInfo")} &rarr;
                         </Button>
                       </DialogTrigger>
                       <DialogContent>

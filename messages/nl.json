@@ -1,0 +1,31 @@
+{
+  "HomePage": {
+    "introduce": "Ik ben Miquel de Wit, en ik geniet van het",
+    "landingTextStart": "Bouwen van prachtige,",
+    "landingTextFunc": "functionele",
+    "landingTextConj": "en",
+    "landingTextInt": "interactieve",
+    "passionateText": "Ik ben gepassioneerd over,"
+  },
+  "AboutPage": {
+    "AboutText": "Ik ben flexibel en vind het leuk om nieuwe technologieën te leren om aan de behoeften van een project te voldoen. Ik heb er vertrouwen in dat ik me snel kan aanpassen aan nieuwe tools en frameworks om geweldige apps te bouwen. Ik wil altijd graag blijven leren en mezelf verbeteren! 😊"
+  },
+  "LatestWorkPage": {
+    "title": "Bekijk mijn nieuwste projecten",
+    "description": "Ik heb aan verschillende projecten gewerkt, van simpele websites tot complexe webapplicaties. Hier zijn een paar van mijn favorieten.",
+    "readMe": "Lees mij",
+    "readMeTitle": "Persoonlijke Commentaar Gewoonte",
+    "readMeDescription": "Mijn code bevat gedetailleerde commentaar die mij helpen om de functionaliteit van mijn code te onthouden tijdens projectwerk. In een professionele omgeving zal ik de richtlijnen voor codering en commentaar van de werkplek volgen.",
+    "importantInfo": "Belangrijke info",
+    "importantTitle": "Serverlocatie en Prestatie Impact",
+    "importantDescription": "De custom server van het project wordt gehost op Railway, met als huidige locatie in de VS. Dit kan leiden tot vertragingen of inconsistenties vanwege de geografische afstand. Helaas kon ik het niet dichter bij mijn locatie hosten, omdat daarvoor een betaald abonnement op hun platform nodig zou zijn.",
+    "NeonCloud": "NeonCloud is een digitale marktplaats waar gebruikers hoogwaardige UI-kits en -iconen kunnen kopen en verkopen. Het biedt een platform voor makers om hun werk te laten zien, waardoor het gemakkelijk is om unieke design assets voor projecten te vinden.",
+    "GuardGear": "Dit e-commerceplatform beschikt over een strakke, moderne gebruikersinterface waarmee gebruikers telefoonhoesjes kunnen ontwerpen en personaliseren met gepersonaliseerde afbeeldingen. Zo creëren ze unieke, hoogwaardige producten die zijn afgestemd op hun stijl.",
+    "Google": "Dit Google Clone-project is een eenvoudige webgebaseerde zoekmachine-imitatie, het bevat dezelfde lay-out en kernfuncties van Google. Het toont nepzoekresultaten waar gebruikers op kunnen klikken en bekijken. Het diende als een waardevolle leertool voor frontend-ontwikkeling!",
+    "ChatWebapp": "Met deze chat-app kunnen gebruikers berichten met realtime-updates op verschillende apparaten verzenden en ontvangen. Gebruikers kunnen één-op-één of groepsgesprekken voeren en ook meldingen ontvangen om gebruikers op de hoogte te houden van nieuwe berichten en vriendschapsverzoeken."
+  },
+  "Footer": {
+    "title": "Gemaakt met ❤️‍🔥 door Miquel de Wit",
+    "contactMe": "Neem contact met mij op via e-mail of LinkedIn"
+  }
+}
