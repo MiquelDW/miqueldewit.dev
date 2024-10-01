@@ -48,6 +48,12 @@ const Welcome = () => {
     } else {
       const endAnimationTimeout = setTimeout(() => {
         setIsAnimating(false); // animation ends
+
+        // scroll to the top when the animation ends
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }, 500); // allow some time for the last word to show
 
       return () => clearTimeout(endAnimationTimeout);

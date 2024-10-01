@@ -45,7 +45,7 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const screenAmount = window.innerWidth < 950 ? 0.1 : 0.4;
+      const screenAmount = window.innerWidth < 950 ? 0.1 : 0.3;
       setAmount(screenAmount);
     }
   }, []);
@@ -160,7 +160,7 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                         </Button>
                       </DialogTrigger>
                       <DialogContent>
-                        <DialogHeader>
+                        <DialogHeader className="flex flex-col gap-y-3">
                           <DialogTitle className="sm:text-xl">
                             {latest.learnMore.title}
                           </DialogTitle>

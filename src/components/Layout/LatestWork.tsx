@@ -34,7 +34,7 @@ const LATEST_WORKS = [
     alt: "GuardGear image",
     title: "GuardGear",
     description:
-      "This e-commerce platform offers a clean, modern UI where users can design and customize phone cases with personalized images. Customers can easily create unique cases and purchase high-quality products tailored to their style.",
+      "This e-commerce platform features a sleek, modern UI where users can design and customize phone cases with personalized images, creating unique, high-quality products tailored to their style.",
     tools: [
       "Next.js",
       "TypeScript",
@@ -53,7 +53,7 @@ const LATEST_WORKS = [
     alt: "Google Clone image",
     title: "Google Clone",
     description:
-      "This Google Clone project is a simple web-based search engine imitation, replicating Google's layout and core features. Users can enter search queries to display mock results, it was a great learning tool for frontend development!",
+      "This Google Clone project is a simple web-based search engine imitation, replicating Google's layout and core features. It displays mock search results and served as a valuable frontend development learning tool!",
     tools: ["Next.js", "TypeScript", "Tailwind CSS", "Google's Search Engine"],
     websiteHref: "https://google-clone-rosy-two.vercel.app/",
     sourceHref: "https://github.com/MiquelDW/google-clone",
@@ -63,7 +63,7 @@ const LATEST_WORKS = [
     alt: "Chat webapp image",
     title: "Chat webapp",
     description:
-      "This chat app lets users send and receive messages with real-time updates across devices. Users can engage in one-on-one or group conversations and also receive notifications.",
+      "This chat app lets users send and receive messages with real-time updates across devices. Users can engage in one-on-one or group conversations and also receive notifications to keep users informed of new messages and friend requests.",
     tools: [
       "Next.js",
       "TypeScript",

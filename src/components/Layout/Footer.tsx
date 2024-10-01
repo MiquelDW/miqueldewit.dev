@@ -18,13 +18,13 @@ const Footer = () => {
               target="_blank"
               href="https://www.linkedin.com/in/miquel-de-wit-95a684209/"
             >
-              <FaLinkedinIn className="h-8 w-8 fill-[#0284c7] hover:opacity-85 dark:fill-[#bae6fd]" />
+              <FaLinkedinIn className="h-7 w-7 fill-[#0284c7] hover:opacity-85 dark:fill-[#bae6fd]" />
             </Link>
             <Link target="_blank" href="mailto:miquel.dewit@hotmail.com">
-              <Mail className="h-8 w-8 text-[#ea580c] hover:opacity-85 dark:text-[#fdba74]" />
+              <Mail className="h-7 w-7 text-[#ea580c] hover:opacity-85 dark:text-[#fdba74]" />
             </Link>
             <Link target="_blank" href="#">
-              <BsFillFileEarmarkPersonFill className="mb-[2.5px] h-8 w-8 fill-[#e55374] hover:opacity-85 dark:fill-[#e0929c]" />
+              <BsFillFileEarmarkPersonFill className="mb-[2.5px] h-7 w-7 fill-[#e55374] hover:opacity-85 dark:fill-[#e0929c]" />
             </Link>
           </div>
 
@@ -32,7 +32,9 @@ const Footer = () => {
             <p className="text-base font-bold md:text-lg">
               Crafted with ❤️‍🔥 by Miquel de Wit
             </p>
-            <p className="text-base">Contact me via e-mail or LinkedIn</p>
+            <p className="text-base text-muted-foreground dark:text-gray-300">
+              Contact me via e-mail or LinkedIn
+            </p>
           </div>
         </div>
       </MaxWidthWrapper>

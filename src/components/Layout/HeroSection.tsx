@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="col-span-4 flex h-full w-full items-center justify-center">
             <Image
               src="https://via.placeholder.com/460x480.png?text=Placeholder"
-              alt="Placeholder Image"
+              alt="Image Miquel de Wit"
               width={400}
               height={500}
               className="h-[450px] w-[370px] rounded-md object-cover sm:w-[600px] lg:w-[400px]"
