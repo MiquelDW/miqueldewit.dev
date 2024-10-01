@@ -21,7 +21,7 @@ const SmoothScroll = ({ icons, direction }: SmoothScrollProps) => {
         {[...icons, ...icons, ...icons].map((iconObj, i) => (
           <div
             key={i}
-            className="min-w-[75px] rounded-lg border border-black/50 px-10 py-2 dark:border-white/50"
+            className="min-w-[75px] select-none rounded-lg border border-black/50 px-10 py-2 dark:border-white/50"
           >
             <div className="flex flex-shrink-0 flex-col items-center justify-center space-y-1">
               {iconObj.icon}

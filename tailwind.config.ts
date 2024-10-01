@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -71,11 +72,16 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         leftToRight: "leftToRight 40s linear infinite",
         rightToLeft: "rightToLeft 40s linear infinite",
         fadeInUp: "fadeInUp 0.5s ease-out",
+        fadeIn: "fadeIn 0.4s ease-in-out",
       },
     },
   },

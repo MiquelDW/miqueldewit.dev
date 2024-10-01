@@ -61,6 +61,8 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
   useEffect(() => {
     const timeoutIds: NodeJS.Timeout[] = [];
 
+    // reset the 'visibleItems' state to prevent dupes
+    setVisibleItems([]);
     latestWorks.forEach((latest, index) => {
       const timeoutId = setTimeout(() => {
         setVisibleItems((prevItems) => [...prevItems, latest]);
