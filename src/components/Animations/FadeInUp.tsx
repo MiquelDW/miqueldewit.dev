@@ -30,6 +30,8 @@ type LatestWork = {
     title: string;
     description: string;
   };
+  adminEmail?: string;
+  adminPassword?: string;
 };
 
 interface FadeInUpProps {
@@ -113,8 +115,9 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                 </p>
               </div>
 
-              {/* technology used & link to website and GitHub */}
+              {/* admin information, technology used & link to website and GitHub */}
               <div className="mt-16 flex w-full flex-col space-y-2 self-start">
+                {/* tools used */}
                 <div className="mb-2 flex w-full flex-wrap justify-center gap-2 lg:justify-start">
                   {latest.tools.map((tool, i) => {
                     return (
@@ -128,6 +131,7 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                   })}
                 </div>
 
+                {/* link to website and GitHub */}
                 <div className="flex w-full items-start justify-between">
                   <div
                     className={cn("flex w-full flex-wrap space-x-2", {

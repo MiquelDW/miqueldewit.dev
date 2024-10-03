@@ -17,12 +17,14 @@
     "readMeTitle": "Persoonlijke Commentaar Gewoonte",
     "readMeDescription": "Mijn code bevat gedetailleerde commentaar die mij helpen om de functionaliteit van mijn code te onthouden tijdens projectwerk. In een professionele omgeving zal ik de richtlijnen voor codering en commentaar van de werkplek volgen.",
     "importantInfo": "Belangrijke info",
-    "importantTitle": "Serverlocatie en Prestatie Impact",
-    "importantDescription": "De custom server van het project wordt gehost op Railway, met als huidige locatie in de VS. Dit kan leiden tot vertragingen of inconsistenties vanwege de geografische afstand. Helaas kon ik het niet dichter bij mijn locatie hosten, omdat daarvoor een betaald abonnement op hun platform nodig zou zijn.",
+    "importantTitleChat": "Serverlocatie en Prestatie Impact",
+    "importantDescriptionChat": "De custom server wordt gehost op Railway, met als huidige locatie in de VS. De berichten worden verzonden en ontvangen, maar het is vrij traag vanwege de geografische afstand. Helaas kon ik het niet dichter bij mijn locatie hosten, omdat daarvoor een betaald abonnement op hun platform nodig zou zijn.",
+    "importantTitleNeon": "Productafbeeldingen",
+    "importantDescriptionNeon": "De huidige productafbeeldingen op de website zijn tijdelijke \"placeholders\". Het zijn geen professionele foto's, maar gewoon afbeeldingen van het internet.",
     "NeonCloud": "NeonCloud is een digitale marktplaats waar gebruikers hoogwaardige UI-kits en -iconen kunnen kopen en verkopen. Het biedt een platform voor makers om hun werk te laten zien, waardoor het gemakkelijk is om unieke design assets voor projecten te vinden.",
-    "GuardGear": "Dit e-commerceplatform beschikt over een strakke, moderne gebruikersinterface waarmee gebruikers telefoonhoesjes kunnen ontwerpen en personaliseren met gepersonaliseerde afbeeldingen. Zo creëren ze unieke, hoogwaardige producten die zijn afgestemd op hun stijl.",
+    "GuardGear": "Dit e-commerceplatform beschikt over een strakke, moderne gebruikersinterface waarmee gebruikers telefoonhoesjes kunnen ontwerpen en personaliseren met eigen afbeeldingen. Zo creëren ze unieke, hoogwaardige producten die zijn afgestemd op hun stijl.",
     "Google": "Dit Google Clone-project is een eenvoudige webgebaseerde zoekmachine-imitatie, het bevat dezelfde lay-out en kernfuncties van Google. Het toont nepzoekresultaten waar gebruikers op kunnen klikken en bekijken. Het diende als een waardevolle leertool voor frontend-ontwikkeling!",
-    "ChatWebapp": "Met deze chat-app kunnen gebruikers berichten met realtime-updates op verschillende apparaten verzenden en ontvangen. Gebruikers kunnen één-op-één of groepsgesprekken voeren en ook meldingen ontvangen om gebruikers op de hoogte te houden van nieuwe berichten en vriendschapsverzoeken."
+    "ChatWebapp": "Met deze chat-app kunnen gebruikers berichten versturen en ontvangen op verschillende apparaten met realtime updates. Ze kunnen één-op-één of in groepsgesprekken chatten en ontvangen meldingen om op de hoogte te blijven van nieuwe berichten en vriendschapsverzoeken."
   },
   "Footer": {
     "title": "Gemaakt met ❤️‍🔥 door Miquel de Wit",

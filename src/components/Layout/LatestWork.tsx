@@ -15,25 +15,6 @@ const LatestWork = () => {
 
   const LATEST_WORKS = [
     {
-      img: "/project_imgs/NeonCloud.png",
-      alt: "NeonCloud image",
-      title: "NeonCloud",
-      description: t("NeonCloud"),
-      tools: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Stripe",
-        "Clerk",
-        "Prisma",
-        "Supabase",
-        "UploadThing",
-      ],
-      websiteHref: "https://neon-cloud.vercel.app",
-      sourceHref: "https://github.com/MiquelDW/NeonCloud",
-    },
-    {
       img: "/project_imgs/GuardGear.png",
       alt: "GuardGear image",
       title: "GuardGear",
@@ -51,6 +32,29 @@ const LatestWork = () => {
       ],
       websiteHref: "https://guardgear-shop.vercel.app/",
       sourceHref: "https://github.com/MiquelDW/guardgear_shop",
+    },
+    {
+      img: "/project_imgs/NeonCloud.png",
+      alt: "NeonCloud image",
+      title: "NeonCloud",
+      description: t("NeonCloud"),
+      tools: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Stripe",
+        "Clerk",
+        "Prisma",
+        "Supabase",
+        "UploadThing",
+      ],
+      learnMore: {
+        title: t("importantTitleNeon"),
+        description: t("importantDescriptionNeon"),
+      },
+      websiteHref: "https://neon-cloud.vercel.app",
+      sourceHref: "https://github.com/MiquelDW/NeonCloud",
     },
     {
       img: "/project_imgs/Google-Clone.png",
@@ -85,8 +89,8 @@ const LatestWork = () => {
         "Prisma Pulse",
       ],
       learnMore: {
-        title: t("importantTitle"),
-        description: t("importantDescription"),
+        title: t("importantTitleChat"),
+        description: t("importantDescriptionChat"),
       },
       websiteHref: "https://chat-webapp-client.vercel.app/conversations",
       sourceHref: "https://github.com/MiquelDW/chat-webapp",
@@ -124,6 +128,28 @@ const LatestWork = () => {
         </div>
 
         <FadeInUp latestWorks={LATEST_WORKS} />
+
+        <div className="mt-8 flex w-full items-center justify-center space-y-2">
+          <div className="flex flex-col rounded-lg border border-black/50 bg-white px-5 py-3 shadow-lg dark:border-white/50 dark:bg-[#18181b] dark:shadow-[#18181b]">
+            <div className="flex flex-col space-y-1">
+              <p className="text-center text-xl font-bold">Admin login</p>
+              <p className="max-w-prose px-4 text-center text-sm text-muted-foreground dark:text-gray-300">
+                NeonCloud & GuardGear
+              </p>
+            </div>
+
+            <div className="my-2 w-full border-t border-zinc-700 dark:border-gray-200" />
+
+            <div className="flex flex-col space-y-1">
+              <p className="max-w-prose px-4 text-center text-base text-muted-foreground dark:text-gray-300">
+                miquel.dewit@hotmail.com
+              </p>
+              <p className="max-w-prose px-4 text-center text-base text-muted-foreground dark:text-gray-300">
+                AdminDashboard
+              </p>
+            </div>
+          </div>
+        </div>
       </MaxWidthWrapper>
     </section>
   );

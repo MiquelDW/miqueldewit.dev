@@ -7,6 +7,7 @@ import { ChevronDown, Mail } from "lucide-react";
 import ThemeToggler from "../Theming/theme-toggler";
 import RotatingText from "../Animations/RotatingText";
 import { useTranslations } from "next-intl";
+import LanguageToggler from "../LanguageToggler";
 
 const ROTATINGTEXTS = [
   "Software Development",
@@ -24,14 +25,18 @@ const HeroSection = () => {
       <MaxWidthWrapper>
         <div className="flex items-center justify-between px-5 pt-5 lg:pt-32">
           <p className="font-bold sm:text-lg lg:text-xl">Miquel de Wit.</p>
-          <ThemeToggler />
+
+          <div className="flex gap-x-4">
+            <ThemeToggler />
+            <LanguageToggler />
+          </div>
         </div>
 
         <div className="flex flex-col space-y-10 px-5 pb-14 pt-8 lg:grid lg:grid-cols-10 lg:space-x-10 lg:pt-32">
           {/* Image */}
           <div className="col-span-4 flex h-full w-full items-center justify-center">
             <Image
-              src="https://via.placeholder.com/460x480.png?text=Placeholder"
+              src="/Selfie_6.jpeg"
               alt="Image Miquel de Wit"
               width={400}
               height={500}
@@ -73,7 +78,7 @@ const HeroSection = () => {
               <Link target="_blank" href="mailto:miquel.dewit@hotmail.com">
                 <Mail className="h-8 w-8 text-[#ea580c] hover:opacity-85 dark:text-[#fdba74]" />
               </Link>
-              <Link target="_blank" href="#">
+              <Link target="_blank" href="/CV_Miquel_de_Wit.pdf">
                 <BsFillFileEarmarkPersonFill className="mb-[2.5px] h-8 w-8 fill-[#e55374] hover:opacity-85 dark:fill-[#e0929c]" />
               </Link>
             </div>

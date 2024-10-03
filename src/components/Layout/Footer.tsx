@@ -26,7 +26,7 @@ const Footer = () => {
             <Link target="_blank" href="mailto:miquel.dewit@hotmail.com">
               <Mail className="h-7 w-7 text-[#ea580c] hover:opacity-85 dark:text-[#fdba74]" />
             </Link>
-            <Link target="_blank" href="#">
+            <Link target="_blank" href="/CV_Miquel_de_Wit.pdf">
               <BsFillFileEarmarkPersonFill className="mb-[2.5px] h-7 w-7 fill-[#e55374] hover:opacity-85 dark:fill-[#e0929c]" />
             </Link>
           </div>
