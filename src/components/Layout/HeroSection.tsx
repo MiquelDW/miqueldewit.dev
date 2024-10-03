@@ -71,7 +71,7 @@ const HeroSection = () => {
             <div className="flex h-10 items-end justify-center space-x-4 lg:justify-start">
               <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/miquel-de-wit-95a684209/"
+                href="https://www.linkedin.com/in/miquel-de-wit"
               >
                 <FaLinkedin className="h-8 w-8 fill-[#0284c7] hover:opacity-85 dark:fill-[#bae6fd]" />
               </Link>
