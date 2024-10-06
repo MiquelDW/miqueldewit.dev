@@ -32,9 +32,9 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-10 px-5 pb-14 pt-8 lg:grid lg:grid-cols-10 lg:space-x-10 lg:pt-32">
+        <div className="flex flex-col space-y-10 px-5 pb-14 pt-8 lg:grid lg:grid-cols-[24rem,1fr] lg:space-x-10 lg:pt-32">
           {/* Image */}
-          <div className="col-span-4 flex h-full w-full items-center justify-center">
+          <div className="flex h-full w-full items-center justify-center">
             <Image
               src="/Selfie_6.jpeg"
               alt="Image Miquel de Wit"
@@ -46,11 +46,11 @@ const HeroSection = () => {
           </div>
 
           {/* Landing text  */}
-          <div className="col-span-full col-start-5 flex flex-col space-y-8 font-bold lg:space-y-10">
-            <div className="flex flex-col space-y-3 text-center lg:text-start">
+          <div className="flex w-full flex-col space-y-8 font-bold lg:space-y-10">
+            <div className="flex flex-col items-center space-y-3 text-center lg:items-start lg:text-start">
               <p className="text-md lg:text-xl">{t("introduce")}</p>
 
-              <h1 className="text-balance text-3xl !leading-tight tracking-tight md:text-4xl lg:text-5xl">
+              <h1 className="w-full max-w-[600px] text-3xl !leading-tight tracking-tight md:text-4xl lg:text-5xl">
                 {t("landingTextStart")}{" "}
                 <span className="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300 bg-clip-text text-transparent dark:from-blue-600 dark:via-blue-500 dark:to-gray-300">
                   {t("landingTextFunc")}
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-300 bg-clip-text text-transparent dark:from-purple-500 dark:via-purple-400 dark:to-gray-300">
                   {t("landingTextInt")}
                 </span>{" "}
-                apps ❤️‍🔥
+                {t("landingTextEnd")}
               </h1>
             </div>
 

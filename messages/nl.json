@@ -1,11 +1,12 @@
 {
   "HomePage": {
-    "introduce": "Ik ben Miquel de Wit, en ik geniet van het",
-    "landingTextStart": "Bouwen van prachtige,",
+    "introduce": "Ik ben Miquel de Wit, en ik vind het leuk",
+    "landingTextStart": "Om pixel-perfecte",
     "landingTextFunc": "functionele",
     "landingTextConj": "en",
     "landingTextInt": "interactieve",
-    "passionateText": "Ik ben gepassioneerd over,"
+    "landingTextEnd": "apps te bouwen ❤️‍🔥",
+    "passionateText": "Ik ben gepassioneerd door,"
   },
   "AboutPage": {
     "AboutText": "Ik ben flexibel en vind het leuk om nieuwe technologieën te leren om aan de behoeften van een project te voldoen. Ik heb er vertrouwen in dat ik me snel kan aanpassen aan nieuwe tools en frameworks om geweldige apps te bouwen. Ik wil altijd graag blijven leren en mezelf verbeteren! 😊"

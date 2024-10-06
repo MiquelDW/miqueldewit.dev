@@ -1,10 +1,11 @@
 {
   "HomePage": {
     "introduce": "I'm Miquel de Wit, and I enjoy",
-    "landingTextStart": "Building great looking,",
+    "landingTextStart": "Building pixel-perfect,",
     "landingTextFunc": "functional",
     "landingTextConj": "and",
     "landingTextInt": "interactive",
+    "landingTextEnd": "apps ❤️‍🔥",
     "passionateText": "I'm passionate about,"
   },
   "AboutPage": {
