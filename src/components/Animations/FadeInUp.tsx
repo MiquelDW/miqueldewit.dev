@@ -24,7 +24,7 @@ type LatestWork = {
   title: string;
   description: string;
   tools: string[];
-  websiteHref: string;
+  websiteHref?: string;
   sourceHref: string;
   learnMore?: {
     title: string;
@@ -148,14 +148,16 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                       <p>Source</p>
                     </Link>
 
-                    <Link
-                      target="_blank"
-                      href={latest.websiteHref}
-                      className="flex items-center justify-start space-x-2 rounded-lg bg-black p-2 text-sm font-medium text-white"
-                    >
-                      <Globe className="h-5 w-5" />
-                      <p>Website</p>
-                    </Link>
+                    {latest.websiteHref && (
+                      <Link
+                        target="_blank"
+                        href={latest.websiteHref}
+                        className="flex items-center justify-start space-x-2 rounded-lg bg-black p-2 text-sm font-medium text-white"
+                      >
+                        <Globe className="h-5 w-5" />
+                        <p>Website</p>
+                      </Link>
+                    )}
                   </div>
 
                   {latest.learnMore && (
@@ -185,14 +187,16 @@ const FadeInUp = ({ latestWorks }: FadeInUpProps) => {
                             <p>Source</p>
                           </Link>
 
-                          <Link
-                            target="_blank"
-                            href={latest.websiteHref}
-                            className="flex items-center justify-start space-x-2 rounded-lg bg-black p-2 text-sm font-medium text-white"
-                          >
-                            <Globe className="h-5 w-5" />
-                            <p>Website</p>
-                          </Link>
+                          {latest.websiteHref && (
+                            <Link
+                              target="_blank"
+                              href={latest.websiteHref}
+                              className="flex items-center justify-start space-x-2 rounded-lg bg-black p-2 text-sm font-medium text-white"
+                            >
+                              <Globe className="h-5 w-5" />
+                              <p>Website</p>
+                            </Link>
+                          )}
                         </div>
                       </DialogContent>
                     </Dialog>
