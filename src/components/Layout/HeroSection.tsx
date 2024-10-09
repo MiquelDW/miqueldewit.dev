@@ -11,9 +11,9 @@ import LanguageToggler from "../LanguageToggler";
 
 const ROTATINGTEXTS = [
   "Software Development",
-  "Front-end Development",
-  "Back-end Development",
-  "Full-stack Development",
+  "Frontend Development",
+  "Backend Development",
+  "Fullstack Development",
   "User Experience",
 ];
 

@@ -249,7 +249,7 @@ const AboutSection = () => {
 
         <MaxWidthWrapper className="pb-48 pt-36">
           <div className="flex w-full items-center justify-center">
-            <div className="mb-10 font-bold">
+            <div className="mb-16 font-bold">
               <RotatingText rotatingTexts={ROTATINGTEXTS} largeTxt />
             </div>
           </div>
