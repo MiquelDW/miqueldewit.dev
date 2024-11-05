@@ -31,7 +31,7 @@ const LatestWork = () => {
         "NeonTech",
       ],
       websiteHref: "https://guardgear-shop.vercel.app/",
-      sourceHref: "https://github.com/MiquelDW/guardgear_shop",
+      sourceHref: "https://github.com/MiquelDW/GuardGear-Shop-App",
     },
     {
       img: "/project_imgs/NeonCloud.png",
@@ -54,7 +54,7 @@ const LatestWork = () => {
         description: t("importantDescriptionNeon"),
       },
       websiteHref: "https://neon-cloud.vercel.app",
-      sourceHref: "https://github.com/MiquelDW/NeonCloud",
+      sourceHref: "https://github.com/MiquelDW/NeonCloud-App",
     },
     {
       img: "/project_imgs/Google-Clone.png",
